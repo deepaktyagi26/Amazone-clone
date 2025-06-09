@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Smart Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo">
+            </div>
+        </div>
+
+        <div class="nav-adress border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="nav-signin border">
+            <p><span>Hello, Signin</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            cart
+        </div>
+
+         <div class="auth-options" >
+                <a href="sign_up.html">Sign Up</a><br>
+                <a href="sign_in.html">Sign In</a>
+            </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+
+        <div class="panel-option">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+   </header>
+    <main>
+        <section id="sign-up">
+            <h2>Sign Up</h2>
+            <form action="sign_up.php" method="post">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required><br><br>
+              <label for="phone_no">Phone Number:</label>
+              <input type="tel" id="phone_no" name="phone_no" required pattern="[0-9]{10}"><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required minlength="8"><br><br>
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" required minlength="8"><br><br>
+              <input type="submit" value="Sign Up">
+            </form>
+          </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Amazone clone</p>
+    </footer>
+   
+</body>
+</html>
